@@ -1,0 +1,62 @@
+$servicesHeight: 400px;
+$portfolioHeight: 300px;
+
+section {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 300px;
+}
+
+.about {
+  background-color: #f9f9f9;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.services {
+  top: 10px ;
+  position: sticky;
+  height: 400px;
+  z-index: -3;
+  background-color: #d6d5d5;
+}
+
+.portfolio {
+  background-color: #333;
+  color: wheat;
+  z-index: -2;
+  top: calc(#{$servicesHeight} - #{$portfolioHeight} + 10px);
+  position: sticky;
+  width: 90%;
+}
+
+.team {
+  width: 80%;
+  z-index: -2%;
+  top: calc(#{$servicesHeight} - #{$portfolioHeight} + 10px);
+  position: sticky;
+  background-color: #cce3fc;
+}
+
