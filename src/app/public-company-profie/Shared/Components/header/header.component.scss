@@ -15,3 +15,21 @@ mat-toolbar {
   align-items: center;
   align-content: center;
 }
+
+mat-sidenav-container {
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+mat-sidenav {
+  width: 200px;
+  background-color: aquamarine;
+}
+
+mat-sidenav-content {
+  display: none;
+  visibility: hidden;
+}

@@ -4,7 +4,7 @@
   </div>
 
   <div class="menu">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <button (click)="isOpened=!isOpened" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
     <span>MENU</span>
@@ -13,10 +13,12 @@
 </mat-toolbar>
 
 
-  <mat-sidenav-container>
-    <mat-sidenav mode="over" align="start" opened>
-      Sidenav content
-    </mat-sidenav>
-    <!-- Body -->
+<mat-sidenav-container>
+  <mat-sidenav  [(opened)]="isOpened" mode="push">
+    <a>Home</a>
+  </mat-sidenav>
 
-  </mat-sidenav-container>
+  <mat-sidenav-content disable>
+    End
+  </mat-sidenav-content>
+</mat-sidenav-container>

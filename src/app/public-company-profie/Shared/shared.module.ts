@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { HeaderComponent } from './Components/header/header.component';
 
@@ -16,6 +17,7 @@ import {MatButtonModule} from '@angular/material/button';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
