@@ -1,0 +1,24 @@
+section {
+  height:100vh;
+  background-color: rgb(128, 62, 62);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  box-sizing: border-box;
+}
+
+.hContainer {
+  background-image: url(https://fakeimg.pl/200x100/?retina=1&text=SUC&font=noto);
+  border-radius: 3%;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3%;
+}
+
+.middle {
+  box-sizing: border-box;
+  margin-top: 10%;
+  margin-bottom: 15%;
+}

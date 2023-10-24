@@ -4,6 +4,7 @@ import { PublicCompanyProfieModule } from './public-company-profie/public-compan
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PublicCompanyProfieModule
+    PublicCompanyProfieModule,
+    BrowserAnimationsModule
 
   ],
   providers: [],
