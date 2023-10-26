@@ -5,11 +5,13 @@ import { HomeModule } from './Home/Home.module';
 
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { SharedModule } from './Shared/shared.module';
+import { PublicCompanyProfileComponent } from './public-company-profile.component';
 
 
 
 @NgModule({
   declarations: [
+    PublicCompanyProfileComponent,
     HomeTestToBeRemovedLaterComponent,
 
   ],
@@ -20,6 +22,7 @@ import { SharedModule } from './Shared/shared.module';
     MatSidenavModule
   ],
   exports: [
+    PublicCompanyProfileComponent,
     HomeTestToBeRemovedLaterComponent,
     HomeModule
   ]

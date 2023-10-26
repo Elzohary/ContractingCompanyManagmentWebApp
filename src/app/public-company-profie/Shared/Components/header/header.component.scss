@@ -18,22 +18,20 @@ mat-toolbar {
 
 mat-sidenav-container {
   height: 100%;
-  width: 50%;
+  width: 100%;
   top: 0;
   left: 0;
   position: absolute;
+  height: 0%;
+
 }
 
 mat-sidenav {
-  width: 200px;
+  width: 33%;
   background-color: aquamarine;
 }
 
 mat-sidenav-content {
-  display: none;
-  visibility: hidden;
+  color: transparent;
 }
 
-mat-sidenav-container[_ngcontent-ng-c749782702]{
-  height: 10%;
-}
