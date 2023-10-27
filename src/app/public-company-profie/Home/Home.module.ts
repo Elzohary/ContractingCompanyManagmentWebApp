@@ -5,6 +5,7 @@ import { SharedModule } from '../Shared/shared.module';
 import { HomeComponent } from './Home.component';
 import { HeroComponent } from './Components/hero/hero.component';
 import { CardRightPicComponent } from './Components/card-right-pic/card-right-pic.component';
+import { StickyBGComponent } from './Components/sticky-bg/sticky-bg.component';
 
 
 
@@ -16,7 +17,8 @@ import { CardRightPicComponent } from './Components/card-right-pic/card-right-pi
   declarations: [
     HomeComponent,
     HeroComponent,
-    CardRightPicComponent
+    CardRightPicComponent,
+    StickyBGComponent
   ],
   exports: [
     HomeComponent
