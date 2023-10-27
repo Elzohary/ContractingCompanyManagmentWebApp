@@ -3,10 +3,8 @@
     Logo
   </div>
 
-  <div class="menu">
-    <button (click)="isOpened=!isOpened" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
+  <div class="menu header">
+    <app-sidenav-toggle-btn></app-sidenav-toggle-btn>
     <span>MENU</span>
     <span class="example-spacer"></span>
   </div>
@@ -14,13 +12,3 @@
 
 
 
-
-<mat-sidenav-container>
-  <mat-sidenav  [(opened)]="isOpened" mode="push" position="end">
-    <a>Home</a>
-  </mat-sidenav>
-
-  <mat-sidenav-content >
-    End
-  </mat-sidenav-content>
-</mat-sidenav-container>

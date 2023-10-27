@@ -4,6 +4,7 @@ import { SharedModule } from '../Shared/shared.module';
 
 import { HomeComponent } from './Home.component';
 import { HeroComponent } from './Components/hero/hero.component';
+import { CardRightPicComponent } from './Components/card-right-pic/card-right-pic.component';
 
 
 
@@ -14,7 +15,8 @@ import { HeroComponent } from './Components/hero/hero.component';
   ],
   declarations: [
     HomeComponent,
-    HeroComponent
+    HeroComponent,
+    CardRightPicComponent
   ],
   exports: [
     HomeComponent

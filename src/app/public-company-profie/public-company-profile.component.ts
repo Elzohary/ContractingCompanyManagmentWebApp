@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderService } from './Shared/Services/header.service';
 
 @Component({
   selector: 'app-public-company-profile',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PublicCompanyProfileComponent implements OnInit {
 
-  constructor() { }
+  isSideNavOpen = false;
+
+  constructor(private headerService: HeaderService) {
+   }
 
   ngOnInit() {
+    this.headerService.getSideNavState().subscribe((isOpen) => {
+      this.isSideNavOpen = isOpen;
+    });
   }
 
 }

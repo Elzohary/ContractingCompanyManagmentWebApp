@@ -7,6 +7,7 @@ import { Component, ElementRef } from '@angular/core';
 })
 export class HeaderComponent {
 
-  isOpened : boolean = false;
+  constructor() {
+  }
 
 }

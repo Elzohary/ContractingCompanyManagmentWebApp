@@ -8,12 +8,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { SidenavToggleBtnComponent } from './Components/sidenav-toggle-btn/sidenav-toggle-btn.component';
 
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    SidenavToggleBtnComponent
   ],
   imports: [
     CommonModule,

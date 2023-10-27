@@ -1,2 +1,15 @@
-<app-Home></app-Home>
+<mat-sidenav-container class="overlay">
+    <mat-sidenav [(opened)]="isSideNavOpen" mode="over" position="end">
+        <a>Home</a>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+        <app-Home></app-Home>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+
+
+
+
 
