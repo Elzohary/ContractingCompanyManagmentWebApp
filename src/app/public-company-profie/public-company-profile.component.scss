@@ -2,13 +2,17 @@ mat-sidenav-container {
     height: 100%;
     width: 100%;
     top: 0;
+    overflow: visible;
   }
   
   mat-sidenav {
     width: 33%;
     background-color: aquamarine;
+    overflow: visible;
   }
   
   mat-sidenav-content {
     color: transparent;
+    height: 100%;
+    overflow: visible;
   }
