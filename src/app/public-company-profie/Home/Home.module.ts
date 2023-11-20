@@ -6,6 +6,7 @@ import { HomeComponent } from './Home.component';
 import { HeroComponent } from './Components/hero/hero.component';
 import { CardRightPicComponent } from './Components/card-right-pic/card-right-pic.component';
 import { StickyBGComponent } from './Components/sticky-bg/sticky-bg.component';
+import { StickyCardFrontComponent } from './Components/sticky-card-front/sticky-card-front.component';
 
 
 
@@ -18,7 +19,8 @@ import { StickyBGComponent } from './Components/sticky-bg/sticky-bg.component';
     HomeComponent,
     HeroComponent,
     CardRightPicComponent,
-    StickyBGComponent
+    StickyBGComponent,
+    StickyCardFrontComponent
   ],
   exports: [
     HomeComponent
