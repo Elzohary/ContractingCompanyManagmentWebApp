@@ -4,13 +4,13 @@ mat-sidenav-container {
     top: 0;
     overflow: visible;
   }
-  
+
   mat-sidenav {
     width: 33%;
     background-color: rgb(12, 85, 61);
     overflow: visible;
   }
-  
+
   mat-sidenav-content {
     height: 100%;
     overflow: visible;
@@ -27,4 +27,8 @@ mat-sidenav-container {
 
   hr {
     margin-bottom: 2em;
+  }
+
+  img {
+    width: 25%;
   }

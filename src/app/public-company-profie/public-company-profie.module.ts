@@ -13,20 +13,22 @@ import { HomeTestToBeRemovedLaterComponent } from './Shared/home-test-to-be-remo
 @NgModule({
   declarations: [
     PublicCompanyProfileComponent,
-    HomeTestToBeRemovedLaterComponent,
+    HomeTestToBeRemovedLaterComponent
 
   ],
   imports: [
     CommonModule,
     HomeModule,
     SharedModule,
-    MatSidenavModule
+    MatSidenavModule,
+
   ],
   exports: [
     PublicCompanyProfileComponent,
     HomeTestToBeRemovedLaterComponent,
-    HomeModule
+    HomeModule,
+
   ],
-  
+
 })
 export class PublicCompanyProfieModule { }

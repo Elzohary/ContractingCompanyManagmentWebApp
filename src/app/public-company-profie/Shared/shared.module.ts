@@ -9,11 +9,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { SidenavToggleBtnComponent } from './Components/sidenav-toggle-btn/sidenav-toggle-btn.component';
+import { StickyTestComponent } from './Components/sticky-test/sticky-test.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    SidenavToggleBtnComponent
+    SidenavToggleBtnComponent,
+    StickyTestComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { SidenavToggleBtnComponent } from './Components/sidenav-toggle-btn/siden
   ],
   exports: [
     MatSidenavModule,
-    HeaderComponent
+    HeaderComponent,
+    StickyTestComponent
   ]
 })
 export class SharedModule { }
