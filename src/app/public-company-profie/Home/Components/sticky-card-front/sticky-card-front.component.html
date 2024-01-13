@@ -1,5 +1,19 @@
-<section>
+<section [class.sticky]="(sharedData$ | async) === false">
     <div class="hContainer">
-        <p>Hello Zohary</p>
+        <div class="left">
+            <div class="leftContent">
+                <p> {{cardData?.cardNumber}} </p>
+
+                <h1> {{cardData?.Title}} </h1>
+
+                <h4>
+                    {{cardData?.description}}
+                </h4>
+            </div>
+        </div>
+
+        <div class="right">
+            <img [src]='cardData?.img'>
+        </div>
     </div>
 </section>

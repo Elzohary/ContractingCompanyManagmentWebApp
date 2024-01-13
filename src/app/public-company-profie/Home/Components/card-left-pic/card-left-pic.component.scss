@@ -1,12 +1,12 @@
 section {
     height: 100vh;
-    background-color: rgb(206, 206, 206);
     color: black;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 3%;
     padding-right: 3%;
     box-sizing: border-box;
+    background-color: rgb(206, 206, 206);;
 }
 
 .hContainer {
@@ -17,7 +17,7 @@ section {
     box-sizing: border-box;
     padding: 3%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content:space-between;
 }
 
@@ -26,6 +26,10 @@ section {
     height: 100%;
     display: flex;
     flex-direction: column;
+    flex-basis: 0;
+    flex: 1;
+    max-width: 100%;
+    padding-inline: 3%;
 
     .leftContent {
         p {
@@ -62,3 +66,4 @@ img {
 h4 {
     line-height: 1.5em;
 }
+

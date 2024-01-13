@@ -7,6 +7,8 @@ import { HeroComponent } from './Components/hero/hero.component';
 import { CardRightPicComponent } from './Components/card-right-pic/card-right-pic.component';
 import { StickyBGComponent } from './Components/sticky-bg/sticky-bg.component';
 import { StickyCardFrontComponent } from './Components/sticky-card-front/sticky-card-front.component';
+import { StickyCard } from '../Models/sticky-card';
+import { CardLeftPicComponent } from './Components/card-left-pic/card-left-pic.component';
 
 
 
@@ -20,10 +22,12 @@ import { StickyCardFrontComponent } from './Components/sticky-card-front/sticky-
     HeroComponent,
     CardRightPicComponent,
     StickyBGComponent,
-    StickyCardFrontComponent
+    StickyCardFrontComponent,
+    CardLeftPicComponent
   ],
   exports: [
     HomeComponent
   ]
 })
-export class HomeModule { }
+export class HomeModule { 
+}

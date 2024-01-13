@@ -7,12 +7,24 @@ mat-sidenav-container {
   
   mat-sidenav {
     width: 33%;
-    background-color: aquamarine;
+    background-color: rgb(12, 85, 61);
     overflow: visible;
   }
   
   mat-sidenav-content {
-    color: transparent;
     height: 100%;
     overflow: visible;
+  }
+
+  .list {
+    color: white;
+    padding: 8%;
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  hr {
+    margin-bottom: 2em;
   }

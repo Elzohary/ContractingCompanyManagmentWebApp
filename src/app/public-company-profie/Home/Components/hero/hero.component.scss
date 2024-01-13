@@ -1,6 +1,6 @@
 section {
   height:100vh;
-  background-color: rgb(128, 62, 62);
+  background-color: rgb(206, 206, 206);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +9,9 @@ section {
 }
 
 .hContainer {
-  background-image: url(https://fakeimg.pl/200x100/?retina=1&text=SUC&font=noto);
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(././../../../../../assets/hero.jpg);
+  background-size: cover;
+  background-position-y: -25vh;
   border-radius: 3%;
   height: 100%;
   width: 100%;
@@ -18,7 +20,9 @@ section {
 }
 
 .middle {
-  box-sizing: border-box;
-  margin-top: 10%;
+  margin-top: 7%;
   margin-bottom: 15%;
+  color: white;
+  font-weight: 700;
+  font-size: 5rem;
 }

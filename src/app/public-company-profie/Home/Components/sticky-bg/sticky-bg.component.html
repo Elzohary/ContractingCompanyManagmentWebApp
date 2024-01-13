@@ -1,4 +1,4 @@
-<section class="sticky">
+<section class="scrollable" [class.sticky]="(sharedData$ | async) === false" [class.notSticky]="(sharedData$ | async) === true">
     <div class="hContainer">
         <div class="top">
             <p>Sectors</p>
@@ -8,7 +8,8 @@
 
         <div class="bottom">
             <h5>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum mollitia odio ipsa in est alias reprehenderit nulla nihil vitae, incidunt tempora qui cupiditate, fugiat aspernatur corrupti illum sint temporibus.
+                We bring expertise to multiple construction sectors,
+                <br> developing the industry's future and redefining what is possible.
             </h5>
         </div>
     </div>
