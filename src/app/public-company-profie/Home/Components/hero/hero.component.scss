@@ -1,6 +1,5 @@
 section {
   height:100vh;
-  background-color: rgb(206, 206, 206);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +11,7 @@ section {
   background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(././../../../../../assets/hero.jpg);
   background-size: cover;
   background-position-y: -25vh;
-  border-radius: 3%;
+  border-radius: 2em;
   height: 100%;
   width: 100%;
   box-sizing: border-box;

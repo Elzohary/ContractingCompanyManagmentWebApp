@@ -9,13 +9,19 @@ import { StickyBGComponent } from './Components/sticky-bg/sticky-bg.component';
 import { StickyCardFrontComponent } from './Components/sticky-card-front/sticky-card-front.component';
 import { StickyCard } from '../Models/sticky-card';
 import { CardLeftPicComponent } from './Components/card-left-pic/card-left-pic.component';
+import { WhatWeProvideComponent } from './Components/what-we-provide/what-we-provide.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { ContactUsComponent } from './Components/contact-us/contact-us.component';
+
+import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   declarations: [
     HomeComponent,
@@ -23,7 +29,11 @@ import { CardLeftPicComponent } from './Components/card-left-pic/card-left-pic.c
     CardRightPicComponent,
     StickyBGComponent,
     StickyCardFrontComponent,
-    CardLeftPicComponent
+    CardLeftPicComponent,
+    WhatWeProvideComponent,
+    FooterComponent,
+    ContactUsComponent,
+
   ],
   exports: [
     HomeComponent
