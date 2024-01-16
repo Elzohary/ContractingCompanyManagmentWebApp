@@ -60,24 +60,28 @@ section {
 
   }
   
-  textarea, input:focus {
-    font-weight: 500;
-    border-color: rgb(4, 128, 31);
-  }
 
   textarea {
     height: 5vw;
   }
 
   button {
-    margin-top: 1vw;
+    border-radius: 2em;
+    background-color: #0f3531;
+    color: #eff7f6;
+    outline: none;
+    border: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;;
+    padding-inline: 1.2em;
+
   }
 }
 
 
-button:disabled {
+/* button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
-}
+} */
 
 /* Add additional styling as needed */

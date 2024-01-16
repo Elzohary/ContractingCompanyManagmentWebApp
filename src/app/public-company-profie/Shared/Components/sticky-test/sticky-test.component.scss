@@ -32,7 +32,7 @@ $class-name: cards_wrap;
       flex-direction: column;
       border-radius: 2rem;
       background-position: center;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(../../../../../assets/focus.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(https://images.pexels.com/photos/159375/construction-site-build-construction-work-159375.jpeg);
       background-size:100%;
       background-size: cover;
       height: $card-height;
@@ -64,27 +64,27 @@ $class-name: cards_wrap;
       flex-direction: column;
       border-radius: 2rem;
       background-position: center;
-      background-image: url('https://images.unsplash.com/photo-1676799910702-5b40ee8ac092?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1649&q=80');
-      background-size: cover;
+      /* background-image: url('https://images.unsplash.com/photo-1676799910702-5b40ee8ac092?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1649&q=80');
+      background-size: cover; */
       height: ($card-height)-25vh;
 
       &.color2 {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../../../assets/card1.jpg');
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/7509167/pexels-photo-7509167.jpeg');
         background-size: cover;
         background-position: center;
       }
       &.color3 {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../../../assets/card2.jpg');
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/14365833/pexels-photo-14365833.jpeg');
         background-size: cover;
         background-position: center;
       }
       &.color4 {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../../../assets/hero.jpg');
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/10675505/pexels-photo-10675505.jpeg');
         background-size: cover;
         background-position: center;
       }
       &.last {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../../../assets/right.jpg');
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/7358746/pexels-photo-7358746.jpeg');
         background-size: cover;
         background-position: center;
       }
@@ -106,7 +106,7 @@ $class-name: cards_wrap;
   background-color: rgb(255, 255, 255);
   color: rgb(37, 37, 37) !important ;
   border-radius: 2em;
-  height: 70vh;
+  height: ($card-height)-25vh;
   width: 100%;
   box-sizing: border-box;
   padding: 2%;

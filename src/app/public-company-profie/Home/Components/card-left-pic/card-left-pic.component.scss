@@ -55,12 +55,13 @@ section {
     width: 40%;
 }
 
-img {
+img,iframe, video {
     height: 100%;
     position: relative;
     width: 100%;
     border-radius: 3%;
     object-fit: cover;
+    
 }
 
 h4 {
