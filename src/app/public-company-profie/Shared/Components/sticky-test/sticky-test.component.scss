@@ -101,3 +101,59 @@ $class-name: cards_wrap;
   }
 }
 
+
+.hContainer {
+  background-color: rgb(255, 255, 255);
+  color: rgb(37, 37, 37) !important ;
+  border-radius: 2em;
+  height: 70vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .right {
+      height: 100%;
+      width: 40%;
+      display: flex;
+      justify-content: end;
+      img {
+          height: 100%;
+          position: relative;
+          width: 80%;
+          border-radius: 3%;
+          object-fit: cover;
+      }
+  }
+
+  .left {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+
+      .leftContent {
+          p {
+              margin-bottom: 5%;
+              font-size:small;
+          }
+
+          h1 {
+              margin-bottom: 3em;
+              font-size: 2rem;
+              color: rgb(37, 37, 37) !important ;
+          }
+
+          h4 {
+            font-weight: 300;
+            line-height: 2vw;
+          }
+
+          p {
+            color: rgb(37, 37, 37) !important ;
+          }
+      }
+  }
+}

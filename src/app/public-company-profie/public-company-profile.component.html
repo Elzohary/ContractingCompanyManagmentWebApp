@@ -1,10 +1,23 @@
 <mat-sidenav-container class="overlay">
     <mat-sidenav [(opened)]="isSideNavOpen" mode="over" position="end">
         <ul class="list">
-            <img src="../../assets/suc.png" alt="">
+            <div class="menu">
+                <img src="../../assets/logo.png" alt="">
             <hr>
             <li>Home</li>
+            </div>
+
+            <div class="info">
+                <h5>Contact Information</h5>
+            <ul>
+                <li class="contact">KSA - Rastanura 31941</li>
+                <li class="contact">013 6674009</li>
+                <li class="contact">suc@suc-sa.com</li>
+            </ul>
+            </div>
         </ul>
+
+        
     </mat-sidenav>
 
     <mat-sidenav-content style="height: 100%;">

@@ -23,6 +23,10 @@ mat-sidenav-container {
     font-weight: 600;
     text-decoration: none;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
   }
 
   hr {
@@ -30,5 +34,15 @@ mat-sidenav-container {
   }
 
   img {
-    width: 25%;
+    width: 40%;
+  }
+
+
+  h5 {
+    margin-top: 5em;
+  }
+
+  .contact {
+    font-size: small;
+    font-weight: 400;
   }

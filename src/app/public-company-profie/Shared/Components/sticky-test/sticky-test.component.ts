@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { StickyCard } from 'src/app/public-company-profie/Models/sticky-card';
 
 @Component({
   selector: 'app-sticky-test',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./sticky-test.component.scss']
 })
 export class StickyTestComponent {
-
+  
 }
