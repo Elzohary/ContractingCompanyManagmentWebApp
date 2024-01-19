@@ -1,28 +1,35 @@
 section {
-  height:100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3%;
+  max-height: 100vh;
+  min-height: 70%;
+  width: auto;
+  padding: 3vw;
   box-sizing: border-box;
+  color: #eff7f6;
 }
 
 .hContainer {
   background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
-  background-position-y: -25vh;
+  background-position-y: -15vh;
+  height: 100vw;
+  max-height: 88vh;  
   border-radius: 2em;
-  height: 100%;
-  width: 100%;
   box-sizing: border-box;
   padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: content;
 }
+
 
 .middle {
-  margin-top: 7%;
-  margin-bottom: 15%;
-  color: white;
-  font-weight: 700;
-  font-size: 5rem;
+  justify-self: start;
+  align-self: center;
+  
+  P {
+    width: 80%;
+    font-size: 5vw;
+    font-weight: 700;
+  }
 }
-
