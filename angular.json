@@ -88,10 +88,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ContractingCompanyManagmentSoftware:build:production"
+              "buildTarget": "ContractingCompanyManagmentSoftware:build:production"
             },
             "development": {
-              "browserTarget": "ContractingCompanyManagmentSoftware:build:development"
+              "buildTarget": "ContractingCompanyManagmentSoftware:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -99,7 +99,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ContractingCompanyManagmentSoftware:build"
+            "buildTarget": "ContractingCompanyManagmentSoftware:build"
           }
         },
         "test": {
