@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,7 +8,24 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  user = {
+
+loginForm = new FormGroup({
+  email: new FormControl('',Validators.required),
+  password: new FormControl('',Validators.required)
+});
+
+
+handleSubmit(){
+  alert(this.loginForm.value.password);
+}
+
+}
+
+
+
+
+
+  /* user = {
     email: '',
     password: ''
   };
@@ -22,5 +40,4 @@ export class LoginComponent {
       // If the form is not valid, display an error message or take appropriate action.
       console.log('Form is not valid. Please check your input.');
     }
-  }
-}
+  } */

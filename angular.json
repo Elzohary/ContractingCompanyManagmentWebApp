@@ -39,7 +39,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/contracting-company-managment-software",
+            "outputPath": "dist/ContractingCompanyManagmentSoftware/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -121,6 +121,61 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/ContractingCompanyManagmentSoftware/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json",
+            "inlineStyleLanguage": "scss"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@angular-devkit/build-angular:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "ContractingCompanyManagmentSoftware:build:development",
+              "serverTarget": "ContractingCompanyManagmentSoftware:server:development"
+            },
+            "production": {
+              "browserTarget": "ContractingCompanyManagmentSoftware:build:production",
+              "serverTarget": "ContractingCompanyManagmentSoftware:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "ContractingCompanyManagmentSoftware:build:production",
+              "serverTarget": "ContractingCompanyManagmentSoftware:server:production"
+            },
+            "development": {
+              "browserTarget": "ContractingCompanyManagmentSoftware:build:development",
+              "serverTarget": "ContractingCompanyManagmentSoftware:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
