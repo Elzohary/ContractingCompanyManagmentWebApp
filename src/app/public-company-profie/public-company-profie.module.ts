@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HomeModule } from './Home/Home.module';
 import { SharedModule } from './Shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from '../app-routing.module';
+
 
 import {MatSidenavModule} from '@angular/material/sidenav';
 
@@ -24,7 +26,8 @@ import { AboutUsModule } from './about-us/about-us.module';
     SharedModule,
     MatSidenavModule,
     AboutUsModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
 
   ],
   exports: [
