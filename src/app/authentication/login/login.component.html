@@ -1,20 +1,19 @@
-<form [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
-  <label>
-    Email
-    <input type="email" formControlName="email">
-  </label>
-
-  <label>
-    Password
-    <input type="password" formControlName="password">
-  </label>
-
-  <button type="submit" [disabled]="!loginForm.valid">Login</button>
-</form>
-
-
-
-
+<div class="card">
+  <a routerLink="/home">Home</a>
+  <form [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
+    <label>
+      Email
+      <input type="email" formControlName="email">
+    </label>
+  
+    <label>
+      Password
+      <input type="password" formControlName="password">
+    </label>
+  
+    <button type="submit" [disabled]="!loginForm.valid">Login</button>
+  </form>
+</div>
 
 
 
