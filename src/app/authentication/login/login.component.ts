@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,9 +14,11 @@ loginForm = new FormGroup({
   password: new FormControl('',Validators.required)
 });
 
+constructor(private router: Router ) {}
+
 
 handleSubmit(){
-  alert(this.loginForm.value.password);
+  this.router.navigate(['/portal','dashboard']);
 }
 
 }
