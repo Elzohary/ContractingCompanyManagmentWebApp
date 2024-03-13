@@ -18,7 +18,7 @@ constructor(private router: Router ) {}
 
 
 handleSubmit(){
-  this.router.navigate(['/portal','dashboard']);
+  this.router.navigate(['/portal','overview']);
 }
 
 }
