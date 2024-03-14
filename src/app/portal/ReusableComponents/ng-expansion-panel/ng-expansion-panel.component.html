@@ -1,28 +1,35 @@
-<mat-expansion-panel>
+<mat-expansion-panel expanded="true">
     <mat-expansion-panel-header class="d-flex justify-content-between">
-        <mat-panel-title>
-            This is the expansion title
+        <mat-panel-title class="fw-bold">
+            Overview
         </mat-panel-title>
-        <mat-panel-description>
-           <i class="bi bi-dot fs-2 dot"></i> Completed
+        <mat-panel-description class="w-100 d-flex flex-row-reverse align-items-center">
+           <p class="m-0">Completed</p>
+           <i class="bi bi-dot fs-2 dot"></i> 
         </mat-panel-description>
     </mat-expansion-panel-header>
-    <ng-template matExpansionPanelContent class="d-flex d-column">
-        <div class="part">
-            <h5>WO Type</h5>
-            <p>Maintenance</p>
-        </div>
-        <div class="part">
-            <h5>WO Type</h5>
-            <p>Maintenance</p>
-        </div>
-        <div class="part">
-            <h5>WO Type</h5>
-            <p>Maintenance</p>
-        </div>
-        <div class="part">
-            <h5>WO Type</h5>
-            <p>Maintenance</p>
+    <ng-template matExpansionPanelContent>
+        <div class="content w-100 d-flex flex-row justify-content-between">
+            <div class="part w-100">
+                <h5>WO Type</h5>
+                <p class="fw-bold">Maintenance</p>
+            </div>
+            <div class="part w-100">
+                <h5>Location</h5>
+                <p class="fw-bold">15, King Folan, Andalus district, Qarya al Ulya</p>
+            </div>
+            <div class="part w-100">
+                <h5>Value</h5>
+                <p class="fw-bold">370,000 SAR</p>
+            </div>
+            <div class="part w-100">
+                <h5>Completion</h5>
+                <p class="fw-bold">100 %</p>
+            </div>
+            <div class="part-last w-100 text-center">
+                <h5>Client</h5>
+                <p class="fw-bold">SEC</p>
+            </div>
         </div>
     </ng-template>
 </mat-expansion-panel>

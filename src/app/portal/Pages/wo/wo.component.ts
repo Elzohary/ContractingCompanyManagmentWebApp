@@ -11,6 +11,9 @@ import { MatButton } from '@angular/material/button';
 import { MatInput } from '@angular/material/input';
 import { DateAdapter } from '@angular/material/core';
 import { NgExpansionPanelComponent } from '../../ReusableComponents/ng-expansion-panel/ng-expansion-panel.component';
+import { NgCardComponent } from '../../ReusableComponents/ng-card/ng-card.component';
+import { TableComponent } from '../../ReusableComponents/table/table.component';
+import { BarChartComponent } from '../../ReusableComponents/bar-chart/bar-chart.component';
 
 @Component({
   selector: 'app-wo',
@@ -19,12 +22,16 @@ import { NgExpansionPanelComponent } from '../../ReusableComponents/ng-expansion
     RouterModule,
     BreadcrumbComponent,
     NgExpansionPanelComponent,
+    NgCardComponent,
+    TableComponent,
+    BarChartComponent,
     MatExpansionModule,
     MatDatepickerModule,
     MatCardModule,
     MatButton,
     MatDatepicker,
     MatFormFieldModule,
+    
   ],
   templateUrl: './wo.component.html',
   styleUrl: './wo.component.scss'
