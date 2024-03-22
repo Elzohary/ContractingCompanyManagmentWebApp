@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,8 +22,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     SharedModule,
     AuthenticationModule,
     BrowserAnimationsModule,
-    FormsModule
-
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration(),

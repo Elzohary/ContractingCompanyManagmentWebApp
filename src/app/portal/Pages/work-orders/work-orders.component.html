@@ -12,21 +12,21 @@
 
   <mat-table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
     <!-- Id Column -->
-    <ng-container matColumnDef="wo-id">
+    <ng-container matColumnDef="wo-number">
       <mat-header-cell mat-header-cell *matHeaderCellDef> Id </mat-header-cell>
-      <mat-cell mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+      <mat-cell mat-cell *matCellDef="let element"> {{element.woNumber}} </mat-cell>
     </ng-container>
 
     <!-- Location Column -->
-    <ng-container matColumnDef="wo-location">
+    <ng-container matColumnDef="wo-address">
       <mat-header-cell mat-header-cell *matHeaderCellDef> Location </mat-header-cell>
-      <mat-cell mat-cell *matCellDef="let element"> {{element.location}} </mat-cell>
+      <mat-cell mat-cell *matCellDef="let element"> {{element.type}} </mat-cell>
     </ng-container>
 
     <!-- Type Column -->
     <ng-container matColumnDef="wo-type">
       <mat-header-cell mat-header-cell *matHeaderCellDef> Type </mat-header-cell>
-      <mat-cell mat-cell *matCellDef="let element"> {{element.type}} </mat-cell>
+      <mat-cell mat-cell *matCellDef="let element"> {{element.address}} </mat-cell>
     </ng-container>
 
     <!-- Status Column -->
@@ -35,9 +35,15 @@
       <mat-cell mat-cell *matCellDef="let element"> {{element.status}} </mat-cell>
     </ng-container>
 
+    <!-- Progress Column -->
+    <ng-container matColumnDef="wo-progress">
+      <mat-header-cell mat-header-cell *matHeaderCellDef> Progress </mat-header-cell>
+      <mat-cell mat-cell *matCellDef="let element"> {{element.progress}} </mat-cell>
+    </ng-container>
+
     <mat-header-row class="fw-bold tableHeader" mat-header-row
       *matHeaderRowDef="displayedColumns sticky: true"></mat-header-row>
-    <mat-row mat-row *matRowDef="let row; columns: displayedColumns;" routerLink="/portal/wo"></mat-row>
+    <mat-row mat-row *matRowDef="let row; columns: displayedColumns;" (click)="navigateToWo(row.woNumber)"></mat-row>
   </mat-table>
 
   <mat-paginator [pageSizeOptions]="[30, 40, 50]" showFirstLastButtons aria-label="Select page of periodic elements">

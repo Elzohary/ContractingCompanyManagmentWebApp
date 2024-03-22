@@ -1,16 +1,17 @@
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import {CdkTableModule} from '@angular/cdk/table';
-import { workOrdersTableService } from '../../Services/work-orders.service';
-import { WorkOrdersTableViewModel } from '../../viewModel/work-orders-table';
+import { workOrdersTableService } from '../../Services/allWoTable.Service';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import {MatButtonModule} from '@angular/material/button';
+import { IWosTable } from '../../Models/iwos-table';
+import { Router } from 'express';
 
 @Component({
   selector: 'app-work-orders',
@@ -35,20 +36,33 @@ import {MatButtonModule} from '@angular/material/button';
 })
 
 
-export class WorkOrdersComponent implements AfterViewInit{
+export class WorkOrdersComponent implements AfterViewInit, OnInit{
 
-  displayedColumns: string[] = ['wo-id', 'wo-location', 'wo-type', 'wo-status'];
-  dataSource = new MatTableDataSource(this.workOrders.getAllWorkOrders());
+  displayedColumns: string[] = ['wo-number', 'wo-address', 'wo-type', 'wo-status', 'wo-progress'];
+  dataSource! : MatTableDataSource<IWosTable>;
   toggleValue = '';
   
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
 
-  constructor (private workOrders : workOrdersTableService) {
+  constructor (private workOrders : workOrdersTableService, private router : Router) {
+  }
+
+  ngOnInit(): void {
+    this.getAllTableData();
   }
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
+  }
+
+  getAllTableData() {
+    this.workOrders.getAllTableData().subscribe(
+      data => {
+        this.dataSource = new MatTableDataSource(data);
+        this.dataSource.paginator = this.paginator;
+      }
+    );
   }
 
   applyFilter(event: Event) {
@@ -56,7 +70,11 @@ export class WorkOrdersComponent implements AfterViewInit{
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
-  all() {
+  navigateToWo(woNumber : string) {
+    
+  }
+
+  /* all() {
     if(this.toggleValue == 'Completed') {
       this.dataSource.filter = 'Completed';
       console.log(this.toggleValue);
@@ -67,5 +85,5 @@ export class WorkOrdersComponent implements AfterViewInit{
     else if(this.toggleValue == 'In Progress') {
       this.dataSource.filter = 'In Progress';
     }
-  }
+  } */
 }

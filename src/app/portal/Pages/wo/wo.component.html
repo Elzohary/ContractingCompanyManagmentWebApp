@@ -13,19 +13,23 @@
                     <h2>Tasks</h2>
                 </mat-card-header>
                 <mat-card-content class="table">
-                    <app-table></app-table>
                 </mat-card-content>
             </mat-card>
 
+            <mat-card class=" mt-4">
+                @for(status of statusList; track status.name) {
+                    {{status.name}}
+                }
+            </mat-card>
 
         </div>
 
-        <div class="side w-25 ms-2">
+        <div class="side w-25  ms-2">
             <app-ng-card></app-ng-card>
 
             <mat-card class="mt-4">
                 <mat-card-header>
-                    <h2>Expenses Summary</h2>
+                    <h3 class="fw-bold">Expenses Summary</h3>
                 </mat-card-header>
 
                 <mat-card-content>
