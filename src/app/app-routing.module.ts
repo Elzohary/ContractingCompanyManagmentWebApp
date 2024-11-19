@@ -18,7 +18,7 @@ const routes: Routes = [
     { path: 'workorders', component: WorkOrdersComponent, pathMatch: 'full' },
     { path: 'workorders/:id', component: WOComponent, pathMatch: 'full' },
   ] },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/overview', pathMatch: 'full' },
   
 ];
 
